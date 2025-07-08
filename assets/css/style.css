@@ -13,10 +13,20 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background-color: #17abb3;
-    color: #ffffff;
-    padding: 20px;
     flex-wrap: wrap;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.infos-header {
+    flex: 1;
+    min-width: 250px;
+}
+
+.photo {
+    margin-right: 30px;
 }
 
 .container {
@@ -42,18 +52,19 @@ s
 }
 
 .infos-header {
-    margin-left: 80px;
-    flex: 1;
+    margin:0;
+    text-align: center;
 }
 
 header h1 {
     font-family: 'Lato', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
 }
 
 header h2 {
-    margin: 5px 0;
+    margin-top: 5px;
+    font-size: 1.2em;
 }
 
 .contact-icons span {
@@ -64,15 +75,12 @@ header h2 {
 
 .content {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .left {
-    flex: 2;
     padding: 20px;
-    min-width: 100px;
-    background-color: #f5f5f5;
+    width: 30%;
+    background-color: #e3e3e3;
 }
 
 .left section {
@@ -80,9 +88,8 @@ header h2 {
 }
 
 .right {
-    flex: 2;
+    width: 70%;
     padding: 20px;
-    min-width: 350px;
 }
 
 section {
@@ -145,10 +152,14 @@ a {
 footer {
     background-color: #17abb3;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     font-size: 0.9em;
-    color: #e3e3e3;
-    margin-top: 30px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 footer .socials-icons a {
